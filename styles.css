@@ -1,0 +1,162 @@
+
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+
+body {
+  background-color:  hsl(257, 40%, 49%);
+  background-image: url(images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-family: 'Open Sans', sans-serif;
+  padding: 2.2rem;
+  color: white;
+}
+
+main{
+  text-align: center;
+}
+.logo {
+  width: 41%;
+}
+
+.illustration{
+  width: 100%;
+  padding: 3.2rem 0;
+}
+
+h1{
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+p{
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 1.5rem 0;
+  line-height: 1.5;
+}
+
+.btn {
+  width:200px;
+  height:44px;
+  border: 0;
+  border-radius: 22px;
+  box-shadow: 0 2px 10px hsl(257, 40%, 25%);
+  background:white;
+  color: hsl(257, 40%, 49%);
+}
+
+.btn:hover {
+  background: hsl(300, 69%, 71%);
+  color: white;
+  transition: 0.3s;
+}
+footer{
+  display: flex;
+  text-align: center;
+  padding: 4rem 0 0;
+  align-items: center;
+  justify-content: center;
+  gap : 0.6rem;
+}
+
+ion-icon{
+  font-size: 0.8rem;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 0.4rem;
+}
+
+ion-icon:hover{
+  color: hsl(300, 69%, 71%);
+  border-color: hsl(300, 69%, 71%);
+}
+
+@media (min-width:700px){
+
+  body{
+  padding: 3.5rem;
+  }
+
+  .logo{
+    width: 35%;
+  }
+  .illustration{
+    width: 70%;
+  }
+
+  h1{
+    font-size: 2rem;
+  }
+
+  p{
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    width:300px;
+    height:56px;
+    border-radius: 28px;
+  }
+  ion-icon{
+    font-size: 1rem;
+    border-radius: 50%;
+    padding: 0.6rem;
+  }
+}
+
+@media (min-width:1350px){
+
+  body{
+  padding: 4.2rem 4.5rem;
+  background: url(images/bg-desktop.svg), hsl(257, 40%, 49%) ;
+  background-repeat: no-repeat;
+  background-size: contain;
+  }
+  .content{
+    display: flex;
+    padding: 4.5rem 0 2rem;
+    gap: 3rem;
+    text-align: left;
+  }
+  .logo{
+    width: 18%;
+  }
+  .illustration{
+    padding: 0;
+  }
+
+  h1{
+    padding: 2.2rem 0;
+    font-size: 2.6rem;
+  }
+
+  p{
+    font-size: 1.3rem;
+    padding: 0 0 2rem;
+  }
+
+  .btn {
+    width:230px;
+    height:60px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+
+  }
+  footer{
+    justify-content: flex-end;
+    padding: 0;
+    gap: 1.2rem;
+  }
+  ion-icon{
+    font-size: 1.5rem;
+    border-radius: 50%;
+    padding: 0.5rem;
+  }
+}
